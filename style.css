@@ -1,0 +1,236 @@
+﻿/* Définition des polices personnalisées */
+
+@font-face
+{
+
+}
+
+@font-face
+{
+
+}
+
+/* Eléments principaux de la page */
+
+body
+
+
+#bloc_page
+{
+    width: 1200px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    /*font-family: Dayrom, serif;*/
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header
+{
+    background: url('images/separateur.png') repeat-x bottom;
+	/*position: fixed;
+	z-index: 10;*/
+}
+
+#titre_principal
+{
+    display: inline-block;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#logo, header h1
+{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Navigation */
+
+nav
+{
+    display: inline-block;
+    width: 740px;
+    text-align: right;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/* Corps */
+
+article, aside
+{
+   display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+#description_artiste
+{
+margin-top: 15px;
+margin-bottom: 100px;
+}
+
+#description_artiste p
+{
+width: 920px;
+}
+
+#description_artiste img
+{
+float: left;
+margin-right: 15px;
+}
+
+#songs ul
+{
+    list-style-type: none;
+}
+
+#songs li
+{
+    margin-bottom: 10px;
+}
+
+#livestream
+{
+
+}
+
+/*Home*/
+#main_stage
+{
+   position: relative;
+   top:50%;
+   left:35%;
+   margin-left:-150px;
+   margin-top:50px;
+}
+
+#catalogue_artiste
+{
+    display: inline-block;
+    width: 1200px;
+    text-align: center;
+}
+
+#catalogue_artiste ul
+{
+    list-style-type: none;
+}
+
+#catalogue_artiste li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/*Inscription*/
+#formulaire_inscription
+{
+   position: relative;
+   top:50%;
+   left:50%;
+   width:350px;
+   height:125px;
+   margin-left:-150px;
+   margin-top:50px;
+   border: 1px solid #181818;
+   border-radius: 5px;
+   padding: 10px;
+}
+
+#bouton_inscription
+{
+   position: relative;
+   left:40%;
+}
+
+/* Footer */
+
+footer
+{
+	padding-top: 25px;
+	background:  url('images/separateur.png') repeat-x top;
+	margin-top: 50px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+#mentions_legales
+{
+    text-align: center;
+}
+
+/* Correctifs pour les vieilles versions d'Internet Explorer */
+
+/* Pour activer un positionnement type inline-block sur les vieilles versions d'IE */
+
+.old_ie #titre_principal, .old_ie #logo, .old_ie header h1, .old_ie nav, .old_ie nav li, .old_ie .bouton_rouge, .old_ie article, .old_ie aside, .old_ie #tweet, .old_ie #mes_photos, .old_ie #mes_amis, .old_ie #mes_amis ul
+{
+    display: inline;
+    zoom: 1;
+}
+
+/* Quelques ajustements pour les vieilles versions d'IE */
+
+.old_ie section h1, .ie8 section h1
+{
+    font-size: 1.1em;
+}
+
+.old_ie footer div, .ie8 footer div
+{
+    margin-top: 30px;
+    background: url('images/separateur.png') repeat-x top;
+}
+
